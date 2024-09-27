@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white; /* Ensure the text color is white */
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: white; /* Ensure the text color is white */
+}
+
+.home-btn {
+    position: absolute;
+    right: -5%;
+    background: none;
+    border: none;
+    color: white; /* Ensure the text color is white */
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.5em 1em; /* Adjust padding to make the button smaller */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.left, .right {
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #007BFF;
+    text-align: center;
+}
+
+canvas {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    max-width: 220px;
+    padding: 15px;
+    margin: 10px 0; /* Adjusted margin to stack buttons */
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button.clicked {
+    transform: scale(0.95);
+}
+
+.status {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.status span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left, .right {
+        width: 45%;
+    }
+
+    .right {
+        margin-left: 20px; /* Add space between the pie chart and the rows */
+    }
+}
